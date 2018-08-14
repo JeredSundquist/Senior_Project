@@ -9,7 +9,7 @@ using UnityEngine;
 public class DestroyOutOfBounds : MonoBehaviour
 {
     //destroy game object upon leaving playable game board
-    private void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
         Destroy(other.gameObject);
     }

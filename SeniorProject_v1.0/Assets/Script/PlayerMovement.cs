@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
     //USE FOR GAME COMPONENT INSTANTIATION
     void Start ()
     {
-        //NOTE: may not be used in every script for every game component; consider removing HERE
+        //NOTE: may not be used in every script for every game component; consider removing
         rb = GetComponent<Rigidbody>();
 	}
 	
@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //local variables
         float moveHorizontal = Input.GetAxis("Horizontal");//<---Input.GetAxis more flexible than Input.GetKeyDown for mobile
-        float moveVertical = Input.GetAxis("Vertical");//
+        float moveVertical = Input.GetAxis("Vertical");
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);//<---Vector3 for use with velocity call on rigid body player obeject; Z-axis not used therefore zero'd out
 
         //apply movement to rigid body player object

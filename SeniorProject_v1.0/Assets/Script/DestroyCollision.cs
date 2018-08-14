@@ -30,6 +30,6 @@ public class DestroyCollision : MonoBehaviour
         Destroy(gameObject);
 
         //destroy explosion
-        //DestroyImmediate(explosion, true);
+        //Destroy(explosion);
     }
 }

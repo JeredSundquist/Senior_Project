@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /**************************************************************************************************
-//  FUNC: MoveShot
-//  TASK: Moves the shot down range on game board
+//  FUNC: MoveIt
+//  TASK: Moves player shots, hazards, enemy shots
 **************************************************************************************************/
-public class MoveShot : MonoBehaviour
+public class MoveIt : MonoBehaviour
 {
     //local variables (NOTE: public means changeable within Unity IDE)
-    public float speed;
+    public float speed;//<---use negative value in Unity IDE to move down-(toward player)
 
     void Start()
     {
